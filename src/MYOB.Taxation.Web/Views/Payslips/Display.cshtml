@@ -1,0 +1,34 @@
+﻿@model MYOB.Taxation.Employees.Dto.GetEmployeePayslipOutputs
+
+<form id="PayslipDisplayForm">
+
+    <div class="form-group">
+         @Html.LabelFor(model => model.PayPeriod)
+         @Html.DisplayFor(model => model.PayPeriod)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.FirstName)
+        @Html.DisplayFor(model => model.FirstName)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.LastName)
+        @Html.DisplayFor(model => model.LastName)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.GrossIncome)
+        @Html.DisplayFor(model => model.GrossIncome)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.NetIncome)
+        @Html.DisplayFor(model => model.NetIncome)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.IncomeTax)
+        @Html.DisplayFor(model => model.IncomeTax)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.Super)
+        @Html.DisplayFor(model => model.Super)
+    </div>
+
+</form>

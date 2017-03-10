@@ -1,0 +1,20 @@
+The code is using a Domain Driven Design (DDD) application framework called ASP.NET Boilerplate. I use this framework these days although I used to customise my own frameworks from various reference solutions.
+However this framework is the most advanced I have found that is still close enough to the standard tools such as ASP.NET MVC and EF that it is built on.
+
+One of the main concepts of DDD if you have not heard of it is to all developers to focus on the domain code by allowing the domain code to be reused when moving to new UI or data persistance frameworks.
+Thus it provides a plug and play architecture for new technologies to be easily evaluated/tested/compared.
+
+The ASP.NET boilerplate framework also supports a multi-tenant architecture whereby each user of an application can have the own data encapsulated away from other users of the application.
+This can be done with a database for each user or with a tenant id specified for each user data table.
+
+The framework has excellect support for unit testing allowing any database data to be fully mocked out so that arbitary data can be provided for testing.
+
+This instance of the application is setup to use ASP.NET Core with entity framework for the persistence but it can easily be switched to mongo etc. Please refer to the http://www.aspnetboilerplate.com/ documentation for details go to the Documents menu item.
+
+To run the code you need a copy of the database or EF migrations can create it but I will send you a copy of that as well.
+
+The code runs as a web site but a WPF application can be created very easily as well, I just thought I would show them this as Core is still pretty new. Should I do a WPF application for it? Its very trivial.
+
+When the web site runs you just need to login but you also need to specify a tenant name, this can be anything really. But you can use the name Default to use the default tenant.
+
+The payslip menu item will show a list of the current employees and then when you selected one a payslip will be calculated and shown.
